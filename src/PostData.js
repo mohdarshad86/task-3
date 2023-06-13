@@ -34,21 +34,23 @@ const PostData = () => {
             <h2>Post Data to API</h2>
             <form onSubmit={handleSubmit}>
                 <label>
-                    Phone Number:
+                    Phone Number :
                     <input
                         type="text"
                         value={phoneNumber}
+                        placeholder='Enter Your Number'
                         onChange={(e) => setPhoneNumber(e.target.value)}
+                        style={{ margin: "10px" }}
                     />
                 </label>
                 <button type="submit">Submit</button>
             </form>
             <div>
-                <h3>Response Data:</h3>
+                <h3>Response Data :</h3>
                 <pre>{responseData}</pre>
             </div>
             <div>
-                <h3>Response Headers:</h3>
+                <h3>Response Headers :</h3>
                 <pre>{responseHeader}</pre>
             </div>
         </div>
